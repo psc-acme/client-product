@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/client-product",
+    "description": "Package client-product for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ClientProduct\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/lock": "^7.0",
+        "symfony/yaml": "^7.0",
+        "symfony/string": "^7.0",
+        "doctrine/doctrine-bundle": "^2.13",
+        "league/csv": "^9.0"
+    },
+    "require-dev": {
+        "rector/rector": "^1.0",
+        "infection/infection": "^0.27"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
